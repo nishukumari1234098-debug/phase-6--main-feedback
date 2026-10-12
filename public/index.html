@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <header class="page-header">
+            <div>
+                <p class="eyebrow">Learning community</p>
+                <h1>Student Feedback Hub</h1>
+                <p class="intro">Share what is working, what could improve, and help shape a better learning experience.</p>
+            </div>
+            <div class="header-mark" aria-hidden="true">FB</div>
+        </header>
+
+        <section class="content-grid" aria-label="Feedback workspace">
+            <div class="form-panel">
+                <div class="section-heading">
+                    <span class="section-number">01</span>
+                    <div>
+                        <p class="eyebrow">Your voice matters</p>
+                        <h2>Leave feedback</h2>
+                    </div>
+                </div>
+
+        <form id="feedbackForm">
+            <label for="name">Your name</label>
+            <input type="text" placeholder="Enter your name..." id="name">
+
+            <label for="rate">Rating <span>1 to 5</span></label>
+            <input type="number" placeholder="Choose a rating" id="rate" min="1" max="5">
+
+            <label for="comment">Your comments</label>
+            <textarea id="comment" placeholder="Write some comments"></textarea>
+
+            <button type="submit">Submit feedback <span aria-hidden="true">→</span></button>
+            <p id="message"></p>
+        </form>
+            </div>
+
+            <section class="feedback-panel">
+                <div class="section-heading">
+                    <span class="section-number">02</span>
+                    <div>
+                        <p class="eyebrow">Community responses</p>
+                        <h2>All feedback</h2>
+                    </div>
+                </div>
+                <div id="feedbackContainer" aria-live="polite"></div>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
